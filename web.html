@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abanoub Osama - Portfolio</title>
+  <style>
+    /* General Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    html { scroll-behavior: smooth; }
+    body { background: #f0f2f5; color: #333; line-height: 1.6; }
+
+    /* Navbar */
+    header {
+      background: #fff;
+      padding: 15px 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header .container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { font-size: 1.6rem; color: #0077ff; font-weight: bold; }
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #0077ff; }
+
+    /* Hero Section */
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #0077ff, #00c6ff);
+      color: #fff;
+      padding: 20px;
+    }
+    .hero h2 { font-size: 2.5rem; margin-bottom: 15px; color: white; }
+    .hero p { font-size: 1.2rem; max-width: 600px; }
+    .btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 12px 25px;
+      background: #fff;
+      color: #0077ff;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #0077ff; color: #fff; }
+
+    /* Section Styling */
+    section { padding: 70px 20px; max-width: 1200px; margin: auto; }
+    h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; color: #0077ff; }
+
+    /* Projects */
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+    .project-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .project-card:hover { transform: translateY(-8px); }
+    .project-card h3 { margin-bottom: 10px; color: #0077ff; }
+    .project-card p { color: #555; }
+
+    /* Skills */
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      list-style: none;
+    }
+    .skills li {
+      background: #fff;
+      padding: 12px 20px;
+      border-radius: 25px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      font-weight: 500;
+    }
+
+    /* Experience */
+    .experience p { margin-bottom: 15px; }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+    }
+    .contact a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #0077ff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .contact a:hover { color: #00c6ff; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Abanoub</h1>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Hello, I'm <span style="color: #ffe600;">Abanoub Ayaad</span></h2>
+    <p>Software Engineer | Problem Solver | Full Stack Web Developer</p>
+    <a href="#projects" class="btn">View My Work</a>
+    <br><br>
+    <img src = "Abanoub-Osama.jpg" width="300" height="300">
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Pharmacy Management System</h3>
+        <p><strong>Java, SQL</strong></p>
+        <p>OOP-based system managing medicines, devices, and self-care products with validation and scalability.</p>
+      </div>
+      <div class="project-card">
+        <h3>Vending Machine System</h3>
+        <p><strong>C/C++, Java, OOP</strong></p>
+        <p> Developed an object-oriented vending machine project with a well-structured codebase that meets all 
+functional requirements, while designing and managing the machineʼs core programming logic and user 
+interface to ensure optimal functionality and provide a seamless, user-friendly experience.</p>
+      </div>
+      <div class="project-card">
+        <h3>Door Locking System</h3>
+        <p><strong> C/C++, AVR, Embedded Systems, Atmega32, UART</strong></p>
+        <p>Developed a door locking system utilizing AVR microcontrollers and UART communication protocol, 
+implementing precise PWM control to ensure smooth and efficient operation, while managing password 
+setting and resetting, and addressing various operational outcomes and errors to enhance project efficiency.</p>
+      </div>
+      <div class="project-card">
+        <h3> Linux Programmed Shell</h3>
+        <p><strong> VirtualBox, Bash, UNIX</strong></p>
+        <p> Developed a lightweight Unix-like shell in C, implementing core features such as built-in commands (echo, 
+pwd, cd, vim, gcc, exit, etc.) and external command execution using fork and exec. Designed to handle 
+dynamic memory allocation efficiently, with a focus on preventing memory leaks. The project demonstrated 
+strong problem-solving skills, proficiency in system-level programming, and expertise in process 
+management and user input parsing.</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Experience -->
+  <section id="experience" class="experience">
+    <h2>Experience</h2>
+    <p><strong>Instructor – ASUFE CPC Team (2023-present)</strong></p>
+    <p>
+        <ul>
+            <li>
+ Instructed university trainees in programming fundamental and advanced 
+problem-solving techniques, while organizing workshops, coding competitions, 
+and collaborative sessions to enhance their skills and prepare them for 
+competitive programming challenges. </li>
+
+                <li>
+                    Provided a 30+ group mentorship helping trainees develop their coding skills, 
+debug complex problems, and generate better solutions
+                </li>
+        </ul>
+    </p>
+
+    <br><br>
+    <p><strong>Researcher – Pioneer Academics Program (01/2021-09/2021)</strong></p>
+    <p>
+        <ul>
+            <li>
+ Authored a comprehensive 20+ page research paper on Nim and subtraction 
+games, analyzing their mathematical properties and strategic behaviors, which 
+earned an A+ grade and recognition in the top 5% of Pioneer scholars </li>
+
+                <li>
+                    
+ Read 30+ articles and research papers about Number Theory and ways to solve 
+Combinatorial Games
+                </li>
+        </ul>
+    </p>
+
+     <br><br>
+    <p><strong>Academic and Marketing member –  Google Developer Student Club
+ (11/2022-08/2023)</strong></p>
+    <p>
+        <ul>
+            <li>
+ Organized technology courses covering Flutter, embedded systems, web 
+development, and machine learning, announced GDSC events on social media 
+platforms to engage students, and assisted course instructors in delivering and 
+managing coursework throughout the course duration</li>
+
+        
+        </ul>
+    </p>
+  </section>
+
+  <!-- Skills -->
+   <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-category">
+      <h3>Programming Languages:</h3>
+      <p> C/C++, Java, Python, JavaScript, HTML, CSS, 
+Verilog, Embedded C, Bash</p>
+    </div>
+
+    <div class="skills-category">
+      <h3>Web Development:</h3>
+      <p>HTML, CSS, JavaScript, React, Node.js, .NET</p>
+    </div>
+
+    <div class="skills-category">
+      <h3>Databases:</h3>
+      <p>MySQL, PostgreSQL</p>
+    </div>
+
+    <div class="skills-category">
+      <h3>Tools & Platforms:</h3>
+      <p>Git, GitHub, Linux (Bash), VS Code, .NET, 
+IntelliJ, PyCharm, Google Cloud, VirtualBox</p>
+    </div>
+
+    <div class="skills-category">
+      <h3>Other Skills:</h3>
+      <p>Algorithms, Data Structures, Problem Solving  Backend Development, Cloud Infrastructure, 
+System Programming, Competitive Programmin</p>
+    </div>
+  </section>
+
+     <section id="achievements">
+    <h2>Achievements & Certifications</h2>
+    <div class="certifications">
+        <div class="cert-card">
+        <h3>ACPC finalist</h3>
+        <p>Got the 24th rank in the ECPC programming competition and successfully qualified for the ACPC competition</p>
+        <a href="https://drive.google.com/file/d/18gPbY_16YxnEsJEqFfrmAmIvgviUT2QJ/view?usp=drive_link" target="_blank">View Certificate</a>
+      </div>
+      <div class="cert-card">
+        <h3>A+ Research Paper on Nim Games</h3>
+        <p>Ranked in the Top 5% Pioneer Scholars.</p>
+        <a href="https://drive.google.com/file/d/1nkCAIunhKmdmcikkqOgPDc9nElVXtVWQ/view?usp=drive_link" target="_blank">View Certificate</a>
+      </div>
+      <div class="cert-card">
+        <h3>Cloud Computing Training</h3>
+        <p>Hands-on training in modern cloud technologies with Orange company</p>
+        <a href="https://drive.google.com/file/d/1UBvVVucacx7pxNPlp4R_ODVsed4fhnCV/view?usp=drive_link" target="_blank">View Certificate</a>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <a href="abanoubosama252@gmail.com">Email</a>
+    <a href="https://github.com/Beboo44" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/abanoub-ayaad-014b97198/" target="_blank">LinkedIn</a>
+    <a href="https://codeforces.com/profile/Beboo_Osama" target="_blank">CodeForces</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Your Name | Built with HTML & CSS</p>
+  </footer>
+</body>
+</html>
